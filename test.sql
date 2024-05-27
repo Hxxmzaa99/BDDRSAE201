@@ -1,0 +1,226 @@
+-- phpMyAdmin SQL Dump
+-- version 6.0.0-dev
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 192.168.30.22
+-- Généré le : Lun. 27 Mai 2024 à 09:53
+-- Version du serveur : 10.4.8-MariaDB-1:10.4.8+maria~stretch-log
+-- Version de PHP : 8.2.18
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données : `test`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `VILLEUTF8`
+--
+
+CREATE TABLE `VILLE` (
+  `Ville` varchar(255) NOT NULL,
+  `Latitude_Ville` decimal(9,6) DEFAULT NULL,
+  `Longitude_Ville` decimal(9,6) DEFAULT NULL,
+  `Etat` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Ville`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `VILLEUTF8`
+--
+
+INSERT INTO `VILLE` (`Ville`, `Latitude_Ville`, `Longitude_Ville`, `Etat`) VALUES
+('Nashville', 6.17446, 86.76796, 'Washington'),
+('Dover', 1.12636, .31619, 'Florida'),
+('Lincoln', 0.825762, 96.685198, 'Alaska'),
+('Harrisburg', 0.26368, 76.89073, 'Hawaii'),
+('Atlanta', 3.748995, 84.387982, 'Kentucky'),
+('Saint Paul', 4.95370, 93.08995, 'Ohio'),
+('Bismarck', 6.80832, 100.78373, 'Iowa'),
+('Topeka', 9.05582, 95.68901, 'Kansas'),
+('Richmond', 7.54072, 77.43604, 'Montana'),
+('Frankfort', 8.20090, 84.87328, 'Connecticut'),
+('Dover', 1.12636, .31619, 'Oregon'),
+('Nashville', 6.17446, 86.76796, 'Kansas'),
+('Concord', 7.97797, 122.03107, 'Delaware'),
+('Providence', 1.82398, 71.41283, 'Alaska'),
+('Little Rock', 4.74648, 92.28959, 'Georgia'),
+('Montpelier', 4.26005, 72.57538, 'Pennsylvania'),
+('Raleigh', 5.77959, 78.63817, 'Massachusetts'),
+('Annapolis', 8.97844, 76.49218, 'Montana'),
+('Trenton', 0.21705, 74.74293, 'Idaho'),
+('Columbia', .57086, 74.29733, 'Pennsylvania'),
+('Little Rock', 4.74648, 92.28959, 'Utah'),
+('Phoenix', 3.44837, 112.07403, 'Missouri'),
+('Springfield', 2.10148, 72.58981, 'New Mexico'),
+('Atlanta', 3.748995, 84.387982, 'Massachusetts'),
+('Harrisburg', 0.26368, 76.89073, 'Virginia'),
+('Nashville', 6.17446, 86.76796, 'California'),
+('Columbia', .57086, 74.29733, 'Kentucky'),
+('Raleigh', 5.77959, 78.63817, 'Vermont'),
+('Frankfort', 8.20090, 84.87328, 'Florida'),
+('Salt Lake City', 0.76077, 111.89104, 'Wisconsin'),
+('Carson City', 9.16379, 119.76740, 'Indiana'),
+('Saint Paul', 4.95370, 93.08995, 'New York'),
+('Jackson', 2.29875, 90.18481, 'Oregon'),
+('Baton Rouge', 0.45828, 91.14032, 'Ohio'),
+('Olympia', 7.03787, 122.90069, 'California'),
+('Madison', 3.07305, 89.40123, 'Colorado'),
+('Lansing', 2.73253, 84.55553, 'Louisiana'),
+('Sacramento', 8.58157, 121.49440, 'South Carolina'),
+('Raleigh', 5.77959, 78.63817, 'Maryland'),
+('Madison', 3.07305, 89.40123, 'Vermont'),
+('Salt Lake City', 0.76077, 111.89104, 'West Virginia'),
+('Lansing', 2.73253, 84.55553, 'Vermont'),
+('Raleigh', 5.77959, 78.63817, 'Iowa'),
+('Albany', 2.65257, 73.75623, 'Colorado'),
+('Sacramento', 8.58157, 121.49440, 'Kansas'),
+('Salt Lake City', 0.76077, 111.89104, 'Connecticut'),
+('Boise', 3.61871, 116.21460, 'Idaho'),
+('Saint Paul', 4.95370, 93.08995, 'Kansas'),
+('Frankfort', 8.20090, 84.87328, 'Arizona'),
+('Carson City', 9.16379, 119.76740, 'Alaska'),
+('Lincoln', 0.825762, 96.685198, 'Virginia'),
+('Providence', 1.82398, 71.41283, 'Minnesota'),
+('Salt Lake City', 0.76077, 111.89104, 'Arizona'),
+('Montpelier', 4.26005, 72.57538, 'New Jersey'),
+('Honolulu', 1.30694, 157.85833, 'Massachusetts'),
+('Lansing', 2.73253, 84.55553, 'Connecticut'),
+('Santa Fe', 5.68697, 105.93779, 'Pennsylvania'),
+('Honolulu', 1.30694, 157.85833, 'Vermont'),
+('Austin', 0.26715, 97.74306, 'Wisconsin'),
+('Jackson', 2.29875, 90.18481, 'Ohio'),
+('Hartford', 1.76371, 72.68509, 'Montana'),
+('Denver', 9.73923, 104.99025, 'Wisconsin'),
+('Jackson', 2.29875, 90.18481, 'Utah'),
+('Columbia', .57086, 74.29733, 'Rhode Island'),
+('Lincoln', 0.825762, 96.685198, 'Washington'),
+('Annapolis', 8.97844, 76.49218, 'New Jersey'),
+('Montgomery', 2.36680, 86.29996, 'Colorado'),
+('Juneau', 8.30194, 134.41972, 'Kentucky'),
+('Providence', 1.82398, 71.41283, 'Texas'),
+('Bismarck', 6.80832, 100.78373, 'South Carolina'),
+('Trenton', 0.21705, 74.74293, 'Illinois'),
+('Lansing', 2.73253, 84.55553, 'Wyoming'),
+('Baton Rouge', 0.45828, 91.14032, 'Louisiana'),
+('Jackson', 2.29875, 90.18481, 'Massachusetts'),
+('Jefferson City', 8.57670, 92.17351, 'Michigan'),
+('Tallahassee', 0.43825, 84.28073, 'Rhode Island'),
+('Harrisburg', 0.26368, 76.89073, 'Pennsylvania'),
+('Madison', 3.07305, 89.40123, 'Kansas'),
+('Raleigh', 5.77959, 78.63817, 'Arizona'),
+('Jackson', 2.29875, 90.18481, 'North Carolina'),
+('Dover', 1.12636, .31619, 'Connecticut'),
+('Providence', 1.82398, 71.41283, 'Nebraska'),
+('Columbus', 9.96117, 82.99879, 'Pennsylvania'),
+('Jackson', 2.29875, 90.18481, 'Utah'),
+('Augusta', 3.47349, 82.01051, 'Montana'),
+('Tallahassee', 0.43825, 84.28073, 'Indiana'),
+('Salt Lake City', 0.76077, 111.89104, 'Minnesota'),
+('Frankfort', 8.20090, 84.87328, 'Oklahoma'),
+('Trenton', 0.21705, 74.74293, 'Florida'),
+('Concord', 7.97797, 122.03107, 'Ohio'),
+('Salt Lake City', 0.76077, 111.89104, 'Washington'),
+('Columbia', .57086, 74.29733, 'Oregon'),
+('Lansing', 2.73253, 84.55553, 'Kansas'),
+('Dover', 1.12636, .31619, 'Georgia'),
+('Boston', 2.36008, 71.05888, 'Montana'),
+('Columbus', 9.96117, 82.99879, 'Colorado'),
+('Olympia', 7.03787, 122.90069, 'Kentucky'),
+('Richmond', 7.54072, 77.43604, 'Colorado'),
+('Frankfort', 8.20090, 84.87328, 'Oregon'),
+('Boise', 3.61871, 116.21460, 'Montana'),
+('Carson City', 9.16379, 119.76740, 'North Dakota'),
+('Jackson', 2.29875, 90.18481, 'Kansas'),
+('Augusta', 3.47349, 82.01051, 'South Dakota'),
+('Salem', 2.51954, 70.89671, 'Indiana'),
+('Salem', 2.51954, 70.89671, 'Kentucky'),
+('Tallahassee', 0.43825, 84.28073, 'Maine'),
+('Phoenix', 3.44837, 112.07403, 'Louisiana'),
+('Frankfort', 8.20090, 84.87328, 'Nebraska'),
+('Carson City', 9.16379, 119.76740, 'Delaware'),
+('Jackson', 2.29875, 90.18481, 'Virginia'),
+('Tallahassee', 0.43825, 84.28073, 'New Mexico'),
+('Charleston', 2.77647, 79.93105, 'New Hampshire'),
+('Helena', 6.58837, 112.02450, 'North Dakota'),
+('Salt Lake City', 0.76077, 111.89104, 'Hawaii'),
+('Nashville', 6.17446, 86.76796, 'Arkansas'),
+('Salem', 2.51954, 70.89671, 'Arkansas'),
+('Augusta', 3.47349, 82.01051, 'Nevada'),
+('Indianapolis', 9.76840, 86.15806, 'Kansas'),
+('Des Moines', 1.60054, 93.60910, 'Colorado'),
+('Frankfort', 8.20090, 84.87328, 'Idaho'),
+('Bismarck', 6.80832, 100.78373, 'Iowa'),
+('Richmond', 7.54072, 77.43604, 'Illinois'),
+('Lincoln', 0.825762, 96.685198, 'South Carolina'),
+('Jackson', 2.29875, 90.18481, 'Arkansas'),
+('Indianapolis', 9.76840, 86.15806, 'Missouri'),
+('Charleston', 2.77647, 79.93105, 'Washington'),
+('Trenton', 0.21705, 74.74293, 'Kentucky'),
+('Carson City', 9.16379, 119.76740, 'Arkansas'),
+('Montgomery', 2.36680, 86.29996, 'New Jersey'),
+('Bismarck', 6.80832, 100.78373, 'Massachusetts'),
+('Frankfort', 8.20090, 84.87328, 'Arkansas'),
+('Indianapolis', 9.76840, 86.15806, 'Wisconsin'),
+('Providence', 1.82398, 71.41283, 'Minnesota'),
+('Madison', 3.07305, 89.40123, 'New York'),
+('Lansing', 2.73253, 84.55553, 'Colorado'),
+('Baton Rouge', 0.45828, 91.14032, 'Arizona'),
+('Concord', 7.97797, 122.03107, 'Montana'),
+('Columbus', 9.96117, 82.99879, 'Idaho'),
+('Jefferson City', 8.57670, 92.17351, 'Massachusetts'),
+('Columbia', .57086, 74.29733, 'California'),
+('Salem', 2.51954, 70.89671, 'Michigan'),
+('Boise', 3.61871, 116.21460, 'Oklahoma'),
+('Augusta', 3.47349, 82.01051, 'Missouri'),
+('Trenton', 0.21705, 74.74293, 'North Dakota'),
+('Baton Rouge', 0.45828, 91.14032, 'South Carolina'),
+('Juneau', 8.30194, 134.41972, 'Maine'),
+('Atlanta', 3.748995, 84.387982, 'Massachusetts'),
+('Little Rock', 4.74648, 92.28959, 'Indiana'),
+('Albany', 2.65257, 73.75623, 'Texas'),
+('Topeka', 9.05582, 95.68901, 'California'),
+('Lansing', 2.73253, 84.55553, 'Illinois'),
+('Little Rock', 4.74648, 92.28959, 'Arizona'),
+('Raleigh', 5.77959, 78.63817, 'Michigan'),
+('Bismarck', 6.80832, 100.78373, 'Washington'),
+('Dover', 1.12636, .31619, 'Pennsylvania'),
+('Frankfort', 8.20090, 84.87328, 'Maine'),
+('Helena', 6.58837, 112.02450, 'Florida'),
+('Honolulu', 1.30694, 157.85833, 'Nevada'),
+('Charleston', 2.77647, 79.93105, 'Massachusetts'),
+('Raleigh', 5.77959, 78.63817, 'South Carolina'),
+('Pierre', 4.36831, 100.35096, 'New York'),
+('Little Rock', 4.74648, 92.28959, 'Arkansas'),
+('Tallahassee', 0.43825, 84.28073, 'Hawaii'),
+('Atlanta', 3.748995, 84.387982, 'Colorado'),
+('Hartford', 1.76371, 72.68509, 'Connecticut'),
+('Albany', 2.65257, 73.75623, 'North Dakota'),
+('Saint Paul', 4.95370, 93.08995, 'Arkansas'),
+('Providence', 1.82398, 71.41283, 'Minnesota'),
+('Santa Fe', 5.68697, 105.93779, 'Alaska'),
+('Concord', 7.97797, 122.03107, 'Arkansas'),
+('Denver', 9.73923, 104.99025, 'Maine'),
+('Montgomery', 2.36680, 86.29996, 'Michigan'),
+('Montpelier', 4.26005, 72.57538, 'Montana'),
+('Hartford', 1.76371, 72.68509, 'Kentucky'),
+('Topeka', 9.05582, 95.68901, 'Mississippi'),
+('Tallahassee', 0.43825, 84.28073, 'Mississippi'),
+('Olympia', 7.03787, 122.90069, 'Delaware'),
+('Oklahoma City', 5.46756, 97.51642, 'South Dakota'),
+('Jackson', 2.29875, 90.18481, 'Nevada');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
